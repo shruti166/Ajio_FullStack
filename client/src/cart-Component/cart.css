@@ -1,0 +1,155 @@
+.cart_parent_div {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    
+}
+
+.cart_parent_child_div {
+    padding-right: 60px;
+}
+
+.cart_parent_child_div>p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cart_parent_child_div>p>span {
+    color: rgb(180, 177, 177);
+}
+
+.cart_child_div {
+    display: flex;
+    margin-top: 25px;
+    border: 0.2px solid rgb(231, 228, 228);
+}
+
+.cart_child_div img {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.cart_child_p {
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.cart_child_child1_div {
+    margin-right: 240px
+}
+
+.cart_child_div>p,
+.cart_child_div>div {
+    margin-top: 25px;
+}
+
+.cart_child_p,
+.cart_child_p~p {
+    color: grey;
+}
+
+.cart_div_child_p {
+    width: 200px;
+}
+
+.cart_child_child_div {
+    text-align: right;
+}
+
+.cart_child_child_div>p {
+    margin-bottom: 12px;
+}
+
+.cart_child_child_div>button {
+    margin-top: 20px;
+}
+
+.price_brown_class,
+.price_brown_class_line {
+    color: #c2913e;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.price_brown_class_line {
+    text-decoration: line-through;
+    display: inline;
+}
+
+.price_brown_class~p {
+    background-color: rgb(205, 205, 246);
+    font-weight: bolder;
+    padding-right: 15px;
+}
+
+.cart_child_child_div>button {
+    color: rgb(114, 114, 189);
+    font-weight: bolder;
+}
+
+.total_price_parent_div>h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.total_price_parent_div>p {
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.total_price_parent_div {
+    background-color: rgb(250, 246, 246);
+    height: 251px;
+    
+}
+
+.total_price_parent_div .span1 {
+    margin-left: 120px;
+}
+
+.total_price_parent_div .span2 {
+    margin-left: 90px;
+    color: #c2913e;
+}
+
+.total_price_parent_div .span3 {
+    margin-left: 63px;
+    color: #c2913e;
+}
+
+.total_price_parent_div .span3>span {
+    text-decoration: line-through;
+}
+
+.total_price_parent_div .span4 {
+    margin-left: 98px;
+}
+
+.total_price_parent_div button {
+    background-color: #d5a249;
+    color: white;
+    font-weight: 700;
+    padding: 15px 82.7px;
+}
+
+.update_Quantity_Button {
+    margin-right: 10px;
+    background-color: #d5a249;
+    color: white;
+    font-weight: 700;
+    padding: 10px 70px;
+}
+
+.update_Quantity_Button~button {
+    background-color: #d5a249;
+    color: white;
+    font-weight: 700;
+    padding: 10px 70px;
+    
+}

@@ -1,0 +1,43 @@
+.nav_links > Link {
+    text-decoration: none;
+    
+}
+
+.guest_header > div > Link:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 390px){
+    .guest_header, .nav_links, .drawer, .menu_first {
+        display: none;
+    }
+    .ajio_logo {
+        width: 50px;
+        align-items: center;
+    }
+
+    .nav_searchbar {
+        width: 100%;
+        margin-left: -60px;
+    }
+
+    
+}
+@media only screen and (max-width: 820px){
+    .navbar {
+        display: none;
+    }
+    .ajio_logo {
+        width: 50px;
+        align-items: center;
+    }
+
+    .nav_searchbar {
+        width: 100%;
+        margin-left: -60px;
+    }
+
+    
+}

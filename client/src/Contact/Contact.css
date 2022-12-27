@@ -1,0 +1,49 @@
+.section {
+  text-align: center;
+  margin-top: 100px;
+}
+.common-heading {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+.section .container {
+  margin: 0 auto;
+  margin-top: -40px;
+  max-width: 1100px;
+  padding: 90px 0 50px 0;
+}
+.container .contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container input,
+.container textarea {
+  border: 1px solid #d5a249;
+  /* padding: 9rem 0 5rem 0; */
+  padding: 10px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+input[type="submit"] {
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #d5a249;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  border: 1px solid #d5a249;
+  color: #d5a249;
+  transform: scale(0.9);
+}

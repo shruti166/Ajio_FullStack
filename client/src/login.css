@@ -1,0 +1,76 @@
+.account_create_class {
+  padding: 20px;
+  padding-bottom: 200px;
+}
+
+
+.signup_parent_div {
+  display: inline;
+  margin-left: 3px;
+  color: rgb(17, 17, 119);
+  cursor: pointer;
+}
+
+
+.login_btn {
+  background-color: #d5a249;
+  color: white;
+  padding: 12px 70px;
+  font-size: 18px;
+  display: block;
+  margin-right: 210px;
+}
+
+.otp_btn {
+  background-color: #d5a249;
+  color: white;
+  padding: 12px 40px;
+  margin-right: 190px;
+  margin-bottom: 40px;
+}
+
+.login_close {
+  margin-top: 14px;
+  background-color: rgb(218, 213, 213);
+  color: black;
+  font-weight: bold;
+  padding: 12px 67px;
+  font-size: 18px;
+}
+
+.facebook_logo {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  display: inline;
+  cursor: pointer;
+  border: 2px solid #6178c9;
+}
+
+.gmail_logo {
+  width: 160px;
+  display: inline;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.image_divide_or {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account_set_para {
+  margin-left: 30px;
+  color: grey;
+}
+
+.model_content_wrap_div h3 {
+  margin-top: 25px;
+  color: grey;
+}
+
+.ChevronLeftIcon_backbtn {
+  margin: 20px 0px 0px 25px;
+  font-size: 15psx;
+}
