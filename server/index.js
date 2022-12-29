@@ -1,13 +1,23 @@
-import express from "express";
-import cors from "cors";
-import connection  from "./config/db.js";
-const app = express();
+import express from "express"
+import connection from "./config/db.js";
+import { register, login, getLoggedInUser } from "./controller/user.controller.js";
 
+
+const app = express();
 app.use(express.json());
-app.use(cors());
-app.get('/', (req, res)=> {
-    res.send("Welcome");
+
+app.get('/',(req,res)=>{
+    res.send({
+        message:"welcome"
+    })
 })
+
+app.post("/register",register)
+
+app.post("/login",login)
+
+app.get("/loggedInUser",getLoggedInUser)
+
 
 app.listen(3001, ()=> {
     try {
