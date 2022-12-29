@@ -3,7 +3,7 @@ mongoose.set("strictQuery", true);
 
 async function connect() {
   url =
-    "mongodb+srv://ajio:ajio@cluster0.yyomzai.mongodb.net/ajiodb?retryWrites=true&w=majority";
+    "mongodb+srv://shruti166:pw05_166@cluster0.q022tkn.mongodb.net/ajiodb?retryWrites=true&w=majority";
 
   return new Promise((resolve, reject) => {
     mongoose.connect(
