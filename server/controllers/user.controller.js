@@ -4,6 +4,8 @@ const jwt =require( "jsonwebtoken")
 
 
 const bcrypt =require("bcryptjs")
+require("dotenv").config();
+
 
 
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -44,25 +46,26 @@ const JWT_SECRET = process.env.JWT_SECRET;
     let existingUser = await userModel.findOne({email});
 
     if(existingUser) {
-// let match = bcrypt.compareSync(password, existingUser.password);
+let match = bcrypt.compareSync(password, existingUser.password);
 
-//         if(match) {
-//             let token = jwt.sign({
-//                 _id : existingUser._id,
-//                 name: existingUser.name,
-//                 email: existingUser.email
-//             },JWT_SECRET)
+        if(match) {
+            let token = jwt.sign({
+                _id : existingUser._id,
+                name: existingUser.name,
+                email: existingUser.email
+            },JWT_SECRET)
 
-//             console.log(token,"token");
-//             // Verifying...
-//             let result = jwt.verify(token, JWT_SECRET);
-//             console.log(result,"result or payload");
-//             // Decoding...
-//             result = jwt.decode(token);
-//             console.log(result,"decrypted result");
+            console.log(token,"token");
+            // Verifying...
+            let result = jwt.verify(token, JWT_SECRET);
+            console.log(result,"result or payload");
+            // Decoding...
+            result = jwt.decode(token);
+            console.log(result,"decrypted result");
 
             return res.send({
                 status : "success",
+                data: token
                
             })
 
@@ -73,12 +76,12 @@ const JWT_SECRET = process.env.JWT_SECRET;
             })
         }
 
-//     } else {
-//         return res.status(400).send({
-//             status: 'error',
-//             message: 'user does not exist'
-//         })
-//     }
+    } else {
+        return res.status(400).send({
+            status: 'error',
+            message: 'user does not exist'
+        })
+    }
 
 
     }
