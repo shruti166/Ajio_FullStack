@@ -7,7 +7,17 @@ const {
 const productRoutes = express.Router();
 
 productRoutes.get("/product", async (req, res) => {
-  const rs = await getAllProduct();
+  const {
+    q = "",
+    limit = 10,
+    page = 1,
+    sort = "_id",
+    order = "asc",
+    cat = "",
+    size = "",
+  } = req.query;
+
+  const rs = await getAllProduct(q, +limit, +page, sort, order, cat, size);
   return res.send(rs);
 });
 
