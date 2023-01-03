@@ -18,6 +18,6 @@ app.use(loginRoute);
 app.use(productRoutes);
 connect().then(() => {
   app.listen(PORT, () => {
-    console.log("Server listening at http://localhost:3001");
+    console.log(`Server listening on port ${PORT}`);
   });
 });

@@ -11,6 +11,7 @@ import Cart from "./cart-Component/cart";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import Checkout from "./Components/Checkout";
 import OrderPaced from "./Components/OrderPaced";
+import { Text } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/kitchen" element={<Productpage />}></Route> */}
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/productdetails" element={<ProductDetails />}></Route>
+        <Route path="/productdetails/:id" element={<ProductDetails />}></Route>
         <Route path="/payment" element={<Checkout />}></Route>
         <Route path="/confirmation" element={<OrderPaced />}></Route>
       </Routes>

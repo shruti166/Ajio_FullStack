@@ -75,6 +75,7 @@ export const Productpage = () => {
 
   useEffect(() => {
     getData();
+    console.log("first");
   }, [cat, q, size, sort, order]);
   console.log(value);
 

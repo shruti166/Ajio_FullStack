@@ -4,25 +4,16 @@ import ButtonComp from "./Button";
 import { IoLocationOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
 
-
-
-
-export default function RightCol() {
-  const item = useSelector((storeData) => {
-      return storeData.myPage;
-      
-  })
-  console.log(item);
+export default function RightCol({ product }) {
   return (
     <div className="prodDetails">
-      <h2 className="brand">{item.elem.brand}</h2>
-      <h1 className="prodName">{item.elem.title}</h1>
-      <h3 className="price">{item.elem.price}</h3>
+      <h1 className="prodName">{product.title}</h1>
+      {/* <h3 className="price">{product.price}</h3> */}
       <div className="strPriceDis">
-        MRP <span className="strP">₹{ parseInt((item.elem.price) + ((item.elem.offer_percent)/100) * (item.elem.price)) }</span>
+        MRP <span className="strPrice">₹{product.price}</span>
         <span className="dis">
-          <strong> ({item.elem.offer_percent}%)</strong>
-        </span>{" "}
+          <strong> ({product.offer_percent}%)</strong>
+        </span>
       </div>
       <p>Price inclusive of all taxes</p>
       <div className="offerImg">
@@ -36,7 +27,7 @@ export default function RightCol() {
         Select your size to know your estimated delivery date.
       </div>
 
-      <ButtonComp />
+      <ButtonComp title={product.title} price={product.price} />
 
       <div className="prodDesc">
         <h3>Product Details</h3>
