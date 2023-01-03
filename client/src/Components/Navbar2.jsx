@@ -196,7 +196,7 @@ export default function Navbar2() {
       <div
         className="guest_header"
         style={{
-          width: "500px",
+          width: "600px",
           display: "flex",
           flexDirection: "row-reverse",
           marginTop: "-40px",
@@ -205,21 +205,7 @@ export default function Navbar2() {
           marginLeft: "-390px",
         }}
       >
-        <div></div>
-        <div style={{ backgroundColor: "black" }}>
-          <Link
-            to=""
-            style={{
-              textDecoration: "none",
-              color: "black",
-              fontFamily: "SourceSansPro",
-              fontSize: "12px",
-              color: "#fff",
-            }}
-          >
-            Vist AJIOLUXE
-          </Link>
-        </div>
+        <div style={{ backgroundColor: "black" }}></div>
         <div>
           <Link
             to="/contact"
@@ -227,7 +213,7 @@ export default function Navbar2() {
               textDecoration: "none",
               color: "#3E5060",
               fontFamily: "SourceSansPro",
-              fontSize: "12px",
+              fontSize: "16px",
             }}
           >
             Contact Us
@@ -235,27 +221,15 @@ export default function Navbar2() {
         </div>
         <div
           style={{
-            marginTop: "3px",
             textDecoration: "none",
             color: "#3E5060",
             fontFamily: "SourceSansPro",
-            fontSize: "12px",
+            fontSize: "16px",
+
             cursor: "pointer",
           }}
         >
-          {" "}
-          {auth ? (
-            <p
-              onClick={() => {
-                localStorage.setItem("auth", false);
-                setAuth(false);
-              }}
-            >
-              Logout
-            </p>
-          ) : (
-            <Login />
-          )}
+          <Login />
         </div>
         <div>
           <Link
@@ -264,7 +238,7 @@ export default function Navbar2() {
               textDecoration: "none",
               color: "#3E5060",
               fontFamily: "SourceSansPro",
-              fontSize: "12px",
+              fontSize: "16px",
             }}
           >
             My Account
