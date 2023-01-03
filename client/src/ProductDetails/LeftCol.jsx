@@ -6,13 +6,13 @@ import { useDispatch } from "react-redux";
 export default function LeftCol() {
   let dispatch = useDispatch();
   const item = JSON.parse(localStorage.getItem("item"));
-    const handleImage = (data) => {
-    ImageAction(data, dispatch)
-    }
- 
+  const handleImage = (data) => {
+    ImageAction(data, dispatch);
+  };
+
   return (
     <div className="left">
-      <VStack direction="column">
+      {/* <VStack direction="column">
         <Image
           boxSize="52px"
           height="66px"
@@ -42,7 +42,7 @@ export default function LeftCol() {
           alt="iamge"
           onClick = {() => handleImage(item.elem.image[3])}/>
         
-      </VStack>
+      </VStack> */}
     </div>
   );
 }

@@ -8,15 +8,11 @@ import StripeCheckout from "react-stripe-checkout";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-export default function ButtonComp() {
+export default function ButtonComp({ title, price }) {
   const item = JSON.parse(localStorage.getItem("item"));
   const navigate = useNavigate();
   const arr = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const [product, setProducet] = useState({
-    name: "TShirt",
-    price: 300,
-  });
   let dispatch = useDispatch();
   const addToCart = () => {
     arr.push(item);
@@ -24,7 +20,10 @@ export default function ButtonComp() {
   };
   const payNow = () => {
     axios
-      .post("http://localhost:3001/payment")
+      .post("http://localhost:3001/payment", {
+        amount: price,
+        name: title,
+      })
       .then((res) => {
         if (res.data.url) {
           window.location.href = res.data.url;

@@ -7,16 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 
 export const Display = (props) => {
   let navigate = useNavigate();
-  let dispatch = useDispatch();
+
   console.log(props);
-  const ProductItem = () => {
-    localStorage.setItem("item", JSON.stringify(props));
-    updateAction(props, dispatch);
-    navigate("/productdetails");
+  const ProductItem = (id) => {
+    navigate(`/productdetails/${id}`);
   };
   return (
-    <div className="product" onClick={ProductItem}>
-      <img src={props.elem.image} alt={props.elem.title}></img>
+    <div className="product">
+      <img
+        src={props.elem.image}
+        alt={props.elem.title}
+        onClick={() => ProductItem(props.elem._id)}
+      ></img>
       <h2>{props.elem.brand}</h2>
       <h4>{props.elem.title}</h4>
       <div>
