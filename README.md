@@ -20,7 +20,25 @@ This project has been creatged a part of my course at Masai School in a period o
 
 #HOMEPAGE
 
-<img src = "https://assets.ajio.com/cms/AJIO/WEB/29112022-D-MHP-topbanner-midseasonsale-4080.jpg"/>
+![image](https://user-images.githubusercontent.com/100379404/214812830-c9e05418-9e60-444a-979f-1f814ad56b9d.png)
+
+#PRODUCT PAGE
+
+![image](https://user-images.githubusercontent.com/100379404/214812930-ccc39f1a-c7f6-478f-a657-b0f34ba24698.png)
+
+#CART PAGE
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/100379404/214813231-d01aa6a6-7f4a-4fbd-83fc-b373a2497526.png">
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/100379404/214813374-f20a5149-93bd-4ee9-aeb6-0e433b3b0565.png">
+
+#DEPLOYMENT
+
+- Our frountened has been deployued on netlify and backened deployemnet has been done on render.
+
+Thank you
+
+
 
 
 
