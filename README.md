@@ -24,7 +24,7 @@ This project has been creatged a part of my course at Masai School in a period o
 
 #PRODUCT PAGE
 
-![image](https://user-images.githubusercontent.com/100379404/214812930-ccc39f1a-c7f6-478f-a657-b0f34ba24698.png)
+<img width="1435" alt="image" src="https://user-images.githubusercontent.com/100379404/214815027-ec9e528f-bd11-4322-b827-97839686fb12.png">
 
 #CART PAGE
 
